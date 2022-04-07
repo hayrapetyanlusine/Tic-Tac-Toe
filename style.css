@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --hoverColor: rgba(229, 238, 227, 0.616);
+    --black: rgb(0, 0, 0);
+    --cellHover: rgba(105, 175, 86, 0.226);
+    --infoColor: #a3a3a3e5;
+}
+
+body{
+    background: linear-gradient(130deg, rgb(160, 185, 138) 10%, rgb(58, 78, 53) 100%);
+}
+
+.game-name h1{
+    font-size: 50px;
+    color: var(--black);
+    text-align: center;
+}
+#game{
+    max-width: 600px;
+    margin: 10px auto;
+    position: relative;
+}
+.players{
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.players .player-x, .players .player-o {
+    width: 250px;
+    height: 40px;
+    font-size: 30px;
+    text-align: center;
+    border: solid 1px var(--black);
+    background-color: var(--hoverColor);
+}
+
+#info{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 605px;
+    font-size: 40px;
+    background-color: var(--infoColor);
+}
+#info.board-winner{
+    display: block;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#player-form{
+    margin: 30px auto;
+    border: solid 3px var(--black);
+    font-size: 70px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: var(--hoverColor);
+}
+.cell{
+    background-color: transparent;
+    border: solid 2px var(--black);
+    height: 200px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+}
+.cell:hover{
+    background-color: var(--cellHover);
+}
+
+#button{
+    background: rgb(236, 231, 231);
+    border-radius: 3px;
+    line-height: 50px;
+    color: var(--color);
+    padding: 0 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    transition: 0.4s;
+    opacity: 0.9;
+}
+#button:hover{
+    opacity: 1;
+}
