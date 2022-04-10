@@ -94,3 +94,9 @@ body{
 #button:hover{
     opacity: 1;
 }
+
+@media screen and (max-width: 425px) {
+    .game-name h1{
+        font-size: 40px;
+    }
+}
