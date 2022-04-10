@@ -99,4 +99,17 @@ body{
     .game-name h1{
         font-size: 40px;
     }
+    .cell{
+        height: 120px;
+    }
+    #info{
+        height: 365px;
+    }
+    #player-form{
+        font-size: 50px;
+    }
+    .players .player-x, .players .player-o {
+        width: 155px;
+        height: 35px;
+    }
 }
